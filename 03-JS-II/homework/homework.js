@@ -5,6 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+<<<<<<< HEAD
   var mayor
   var igualdad = x;
   if (x>y){
@@ -15,6 +16,16 @@ function obtenerMayor(x, y) {
     return mayor;
   }else{
     return igualdad;
+=======
+  var num1 = x;
+  var num2 = y;
+  if(x>y){
+    return num1;
+  }if(x<y){
+    return num2;
+  }else{
+    return num1;
+>>>>>>> 9548fdca93f7b302cc128ba207d35b1638053b98
   }
 }
 
@@ -22,10 +33,17 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+<<<<<<< HEAD
   if (edad>=18){
     return "Allowed"; 
   }else {
     return "Not allowed";
+=======
+  if(edad>=18){
+    return 'Allowed'
+  }if(edad<18){
+    return 'Not allowed'
+>>>>>>> 9548fdca93f7b302cc128ba207d35b1638053b98
   }
 }
   
@@ -35,6 +53,7 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+<<<<<<< HEAD
   switch(status){
     case 1:
       return "Online";
@@ -45,6 +64,14 @@ function conection(status) {
     default:
       return "Offline"
     break;       
+=======
+  if(status===1){
+    return 'Online'
+  }if(status===2){
+    return 'Away'
+  }else{
+    return 'Offline'
+>>>>>>> 9548fdca93f7b302cc128ba207d35b1638053b98
   }
 }
 
@@ -55,6 +82,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+<<<<<<< HEAD
   switch(idioma){
     case 'aleman':
       return 'Guten Tag!';
@@ -67,6 +95,16 @@ function saludo(idioma) {
     break;
     default:
       return 'Hola!';
+=======
+  if(idioma==='aleman'){
+    return 'Guten Tag!'
+  }if(idioma==='mandarin'){
+    return 'Ni Hao!'
+  }if(idioma==='ingles'){
+    return 'Hello!'
+  }else{
+    return 'Hola!'
+>>>>>>> 9548fdca93f7b302cc128ba207d35b1638053b98
   }
 }
 
